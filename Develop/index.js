@@ -47,19 +47,37 @@ const questions = [
         ]
       },
 
+      {
+        type: 'input',
+        message: 'What is your Github username?',
+        name: 'username',
+      },
+
+      {
+        type: 'input',
+        message: 'What is the email associated with your Github account?',
+        name: 'email',
+      },
+
     ]
   )
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.readFile('data.csv', 'utf8', (error, data) =>
-  error ? console.error(error) : console.log(data)
+    fs.writeFile('fileName', generateMarkdown(data), (error, data) =>
+  error ? console.error(error) : console.log('Successfully created README.')
 );
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  inquirer.prompt(questions).then((data) =>
+  {
+    console.log
+  }
+  )
+}
 
 // Function call to initialize app
 init();
