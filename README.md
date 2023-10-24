@@ -12,7 +12,7 @@ This application user the Inquirer package for Node.
 
 The following GIF shows the example being created. 
 
-
+![] (https://github.com/quinncombs/readme-generator/blob/main/Develop/video/ezgif.com-crop%20(1).gif)
 
 
 ## User Story
